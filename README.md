@@ -12,6 +12,7 @@ Data structures implemented into Redis have a few special properties:
 * Redis cares to store them on disk, even if they are always served and modified into the server memory. This means that Redis is fast, but that it is also non-volatile.
 * The implementation of data structures emphasizes memory efficiency, so data structures inside Redis will likely use less memory compared to the same data structure modelled using a high-level programming language.
 * Redis offers a number of features that are natural to find in a database, like replication, tunable levels of durability, clustering, and high availability.
+* Redis supports vector similarity search, making it well-suited for AI applications such as short-term memory storage for LLMs, semantic caching, semantic routing, and retrieval-augmented generation (RAG). As a vector database, Redis can scale to search more than [one billion vectors](https://redis.io/blog/searching-1-billion-vectors-with-redis-8/), providing efficient and high-performance search, matching, and recommendation capabilities with extended filtering options.
 
 Another good example is to think of Redis as a more complex version of memcached, where the operations are not just SETs and GETs, but operations that work with complex data types like Lists, Sets, ordered data structures, and so forth.
 
